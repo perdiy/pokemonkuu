@@ -17,6 +17,9 @@
 		52E7E7082A5E8D3E0030DA81 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7E7072A5E8D3E0030DA81 /* MyCollectionViewCell.swift */; };
 		52E7E70A2A5E8E2C0030DA81 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7E7092A5E8E2C0030DA81 /* Model.swift */; };
 		52E7E70C2A5E97980030DA81 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7E70B2A5E97980030DA81 /* DetailViewController.swift */; };
+		52FD69FB2A64F5BF00709481 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52FD69F92A64F5BF00709481 /* CoreData.xcdatamodeld */; };
+		52FD69FD2A64F96000709481 /* FavoritePoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD69FC2A64F96000709481 /* FavoritePoke.swift */; };
+		52FD69FF2A6509EC00709481 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD69FE2A6509EC00709481 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		52E7E7072A5E8D3E0030DA81 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		52E7E7092A5E8E2C0030DA81 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		52E7E70B2A5E97980030DA81 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		52FD69FA2A64F5BF00709481 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		52FD69FC2A64F96000709481 /* FavoritePoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePoke.swift; sourceTree = "<group>"; };
+		52FD69FE2A6509EC00709481 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 				52E7E6F52A5E8CAF0030DA81 /* SceneDelegate.swift */,
 				52E7E6FC2A5E8CB20030DA81 /* Assets.xcassets */,
 				52E7E7012A5E8CB20030DA81 /* Info.plist */,
+				52FD69F92A64F5BF00709481 /* CoreData.xcdatamodeld */,
 			);
 			path = pokemonkuu;
 			sourceTree = "<group>";
@@ -87,6 +94,7 @@
 		52E7E70E2A5EA6220030DA81 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				52FD69FE2A6509EC00709481 /* ListViewController.swift */,
 				52E7E6F72A5E8CAF0030DA81 /* ViewController.swift */,
 				52E7E70B2A5E97980030DA81 /* DetailViewController.swift */,
 				524FA6F32A5FD5AE000B1075 /* PokemonManager.swift */,
@@ -99,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				52E7E7092A5E8E2C0030DA81 /* Model.swift */,
+				52FD69FC2A64F96000709481 /* FavoritePoke.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,12 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FD69FB2A64F5BF00709481 /* CoreData.xcdatamodeld in Sources */,
 				52E7E70A2A5E8E2C0030DA81 /* Model.swift in Sources */,
 				524FA6F42A5FD5AE000B1075 /* PokemonManager.swift in Sources */,
 				52E7E6F82A5E8CAF0030DA81 /* ViewController.swift in Sources */,
+				52FD69FD2A64F96000709481 /* FavoritePoke.swift in Sources */,
 				52E7E6F42A5E8CAF0030DA81 /* AppDelegate.swift in Sources */,
 				52E7E70C2A5E97980030DA81 /* DetailViewController.swift in Sources */,
 				52E7E7082A5E8D3E0030DA81 /* MyCollectionViewCell.swift in Sources */,
+				52FD69FF2A6509EC00709481 /* ListViewController.swift in Sources */,
 				52E7E6F62A5E8CAF0030DA81 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +408,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52FD69F92A64F5BF00709481 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52FD69FA2A64F5BF00709481 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 52FD69FA2A64F5BF00709481 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 52E7E6E82A5E8CAF0030DA81 /* Project object */;
 }

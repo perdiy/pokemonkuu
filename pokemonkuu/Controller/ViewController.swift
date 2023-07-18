@@ -84,8 +84,14 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
             }
         }
         
-        cell.backgroundColor = UIColor.darkGray
         cell.layer.cornerRadius = 8
+        cell.layer.cornerRadius = 8
+        cell.layer.masksToBounds = true
+        cell.layer.masksToBounds = false
+        cell.layer.shadowOffset = CGSizeMake(9, 9)
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOpacity = 0.3
+        cell.layer.shadowRadius = 4
         
         return cell
     }
