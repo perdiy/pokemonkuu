@@ -100,6 +100,10 @@ class DetailViewController: UIViewController {
             favoritePokemon.type = typesText
         }
         
+        if let abilityNames = detailPokemon?.abilities.map({ $0.ability.name }) {
+            let abilitiesText = abilityNames.joined(separator: ", ")
+            favoritePokemon.ability = abilitiesText
+        }
         do {
             try context.save()
             print("Favorite Pokemon saved successfully")
